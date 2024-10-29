@@ -28,6 +28,26 @@ header {
   gap: 10px;
   margin-left: 170px;
 }
+.search-bar {
+  position: relative;
+  display: inline-block;
+}
+
+.fa-magnifying-glass {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  font-size: 23px;
+  color: var(--cor3);
+}
+
+.fa-window-restore {
+  position: absolute;
+  top: 12px;
+  left: 390px;
+  font-size: 23px;
+  color: var(--cor3);
+}
 .search {
   padding: 15px;
   border: none;
@@ -40,6 +60,17 @@ header {
 
 .search::placeholder {
   color: var(--cor3);
+  padding-left: 30px;
+}
+
+.search:focus {
+  color: var(--cor3);
+  padding-left: 45px;
+  font-weight: 600;
+}
+
+.search:focus::placeholder {
+  color: transparent; /* Esconde o placeholder enquanto o usuário digita */
 }
 
 .fa-house {
@@ -49,14 +80,14 @@ header {
   border-radius: 50%;
 }
 
-.end-header ul{
+.end-header ul {
   display: flex;
   gap: 25px;
   list-style-type: none;
   align-items: center;
 }
 
-.end-header li{
+.end-header li {
   display: flex;
   align-items: center;
   gap: 5px;
