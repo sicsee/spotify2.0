@@ -6,21 +6,15 @@
   padding: 5px 8px;
 }
 
-#left {
-  background-color: red;
-  width: 310px;
-  border-radius: 8px;
-}
-
 #center {
   background-color: white;
-  width: 725px;
+  width: 755px;
   height: 440px;
   border-radius: 8px;
 }
 
 #right {
-  background-color: red;
-  width: 295px;
+  background-color: var(--cor2);
+  width: 280px;
   border-radius: 8px;
 }

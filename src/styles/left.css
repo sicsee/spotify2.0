@@ -1,0 +1,88 @@
+#left {
+  background-color: var(--cor2);
+  width: 300px;
+  border-radius: 8px;
+  color: var(--cor3);
+}
+
+.top-left {
+  display: flex;
+  margin: 15px;
+  align-items: center;
+  color: var(--cor3);
+}
+
+.top-left a {
+  color: var(--cor3);
+  text-decoration: none;
+}
+
+.title-left {
+  display: flex;
+  align-items: center;
+}
+
+.title-left:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.bi-collection-fill {
+  font-size: 23px;
+  margin-left: 10px;
+}
+.top-left p {
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 10px;
+  margin-right: 55px;
+}
+
+.fa-plus {
+  font-size: 15px;
+  margin-right: 10px;
+  background-color: var(--cor2);
+  padding: 8px;
+  border-radius: 50%;
+  transition: all 0.1s ease;
+}
+
+.fa-plus:hover {
+  background-color: #1f1f1f;
+  color: white;
+  cursor: pointer;
+}
+
+.fa-arrow-right {
+  font-size: 15px;
+  background-color: var(--cor2);
+  padding: 8px;
+  border-radius: 50%;
+  transition: all 0.1s ease;
+}
+
+.fa-arrow-right:hover {
+  background-color: #1f1f1f;
+  color: white;
+  cursor: pointer;
+}
+
+.abas-left {
+  display: flex;
+  margin-left: 15px;
+}
+
+.abas-left p {
+  color: white;
+  font-size: 13px;
+  font-weight: 450;
+  padding: 4px 12px;
+  background-color: #2a2a2a;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+.abas-left p:hover {
+  background-color: hsla(0, 0%, 100%, 0.14);
+  cursor: pointer;
+}
