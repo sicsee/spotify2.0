@@ -3,18 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="shortcut icon" href="./src/images/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
     <title>Spotify</title>
   </head>
   <body>
     <main id="content">
       <header>
-        <img src="./src/images/Spotify logo.png" alt="Spotify Logo" />
+        <div class="start-header">
+          <img src="./src/images/Spotify logo.png" alt="Spotify Logo" class="logo-header" />
+        </div>
+        <div class="center-header">
+          <i class="fa-solid fa-house"></i>
+          <input type="text" class="search" placeholder="What do you want to play?" />
+        </div>
+        <div class="end-header">
+          <ul>
+            <li>
+          <i class="fa-regular fa-circle-down"></i>
+          <p>Install App</p>
+            </li>
+            <li>
+              <i class="fa-regular fa-bell"></i>
+            </li>
+            <li>
+              <img src="./src/images/iconperf.jpg" alt="Icon Pefil" class="icon-perfil" />
+            </li>
+          </ul>
+        </div>
       </header>
       <sectiion id="home">
-        <div id="left"></div>
-        <div id="center"></div>
-        <div id="right"></div>
+        <div id="left">
+          <p>a</p>
+        </div>
+        <div id="center">
+          <p>b</p>
+        </div>
+        <div id="right">
+          <p>c</p>
+        </div>
       </sectiion>
       <section id="player"></section>
     </main>
