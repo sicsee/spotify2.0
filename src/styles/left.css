@@ -3,9 +3,10 @@
   width: 300px;
   border-radius: 8px;
   color: var(--cor3);
+  height: 440px;
 }
 
-.top-left {
+.title-left {
   display: flex;
   margin: 15px;
   align-items: center;
@@ -15,11 +16,6 @@
 .top-left a {
   color: var(--cor3);
   text-decoration: none;
-}
-
-.title-left {
-  display: flex;
-  align-items: center;
 }
 
 .title-left:hover {
@@ -85,4 +81,60 @@
 .abas-left p:hover {
   background-color: hsla(0, 0%, 100%, 0.14);
   cursor: pointer;
+}
+
+.mid-left {
+  margin: 15px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.recent-left {
+  font-size: 14px;
+  font-family: 700;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-right: 15px;
+}
+
+.recent-left:hover {
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.lupa-left {
+  background-color: var(--cor2);
+  padding: 8px;
+  border-radius: 50%;
+  transition: all 0.1s ease;
+}
+
+.lupa-left:hover {
+  background-color: #1f1f1f;
+  color: white;
+  cursor: pointer;
+}
+
+.left-list {
+  overflow-y: scroll;
+  max-height: 286px;
+}
+
+.left-item {
+  gap: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: none;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #838383;
+  width: 13px;
 }
