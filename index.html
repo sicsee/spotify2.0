@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./src/styles/home.css" />
     <link rel="stylesheet" href="./src/styles/left.css" />
     <link rel="stylesheet" href="./src/styles/player.css" />
+    <link rel="stylesheet" href="./src/styles/playlist.css" />
 
     <title>Spotify</title>
   </head>
@@ -54,7 +55,7 @@
             <div class="title-left">
               <i class="bi bi-collection-fill"></i>
               <p>Your Library</p>
-              <a href="#"><i class="fa-solid fa-plus"></i></a>
+              <a href="#"><i class="fa-solid fa-plus" id="open-form-btn"></i></a>
               <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="abas-left">
@@ -70,12 +71,33 @@
               <i class="fa-solid fa-list"></i>
             </div>
           </div>
-          <div class="left-list">
-            <div class="left-item">
-              <p>lord1</p>
-              <p>lord1</p>
-              <p>lord1</p>
-              <p>lord1</p>
+
+          <div id="playlists">
+            <h2>Playlists</h2>
+            <ul id="playlist-list"></ul>
+
+            <div id="form-container" style="display: none" class="modal">
+              <div class="modal-content">
+                <span id="close-form-btn" class="close">&times;</span>
+                <h3>Nova Playlist</h3>
+                <form id="playlist-form">
+                  <div class="playlist-item">
+                    <label for="playlist-name">Nome da Playlist:</label>
+                    <input type="text" id="playlist-name" required />
+                  </div>
+
+                  <div class="playlist-item">
+                    <label for="creator-name">Nome do Criador:</label>
+                    <input type="text" id="creator-name" required />
+                  </div>
+
+                  <div class="playlist-item">
+                    <label for="playlist-image">URL da Imagem:</label>
+                    <input type="text" id="playlist-image" />
+                  </div>
+                  <button type="submit">Criar Playlist</button>
+                </form>
+              </div>
             </div>
           </div>
         </section>
@@ -87,5 +109,6 @@
         </section>
       </section>
     </main>
+    <script src="./src/script/script.js"></script>
   </body>
 </html>

@@ -4,6 +4,8 @@
 @import url("home.css");
 @import url("left.css");
 @import url("player.css");
+@import url("playlist.csss");
+
 
 * {
   margin: 0;
